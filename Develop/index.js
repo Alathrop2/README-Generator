@@ -6,44 +6,49 @@ const generateMarkdown = require('./utils/generateMarkdown');
 inquirer.createPromptModule([
   {
     type: 'input',
-    message: '',
-    name: 'Table Of Contents',
+    message: 'What is the name of your project?',
+    name: 'Titile',
   },
   {
     type: 'input',
-    message: '',
+    message: 'Give a description of your project',
     name: 'Description',
   },
   {
     type: 'input',
-    message: '',
+    message: 'How can your project be installed?',
     name: 'Installation',
   },
   {
     type: 'input',
-    message: '',
+    message: 'What is this project used for?',
     name: 'Usage',
   },
   {
     type: 'checkbox',
-    message: '',
+    message: 'What license did you use?',
     name: 'License',
     choices: [],
   },
   {
     type: 'input',
-    message: '',
+    message: 'Who contributed to this project?',
     name: 'Contributing',
   },
   {
     type: 'input',
-    message: '',
+    message: 'How can your project be tested?',
     name: 'Tests',
   },
   {
     type: 'input',
-    message: '',
-    name: 'Questions',
+    message: 'What is your github username?',
+    name: 'Github',
+  },
+  {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'Email',
   },
 ]);
 
