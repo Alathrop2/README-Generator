@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+//* Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
+//* Create an array of questions for user input
 inquirer.createPromptModule([
   {
     type: 'input',
@@ -28,7 +28,7 @@ inquirer.createPromptModule([
     type: 'checkbox',
     message: 'What license did you use?',
     name: 'License',
-    choices: [],
+    choices: ['Apache', 'Boost', 'MIT', 'None'],
   },
   {
     type: 'input',
@@ -52,11 +52,20 @@ inquirer.createPromptModule([
   },
 ]);
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//* Create a function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) throw err;
+  });
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+//* Create a function to initialize app
+function init() {
+  inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
+    writeToFile('./README.md', generateMarkdown(answers));
+  });
+}
 
 // Function call to initialize app
 init();
