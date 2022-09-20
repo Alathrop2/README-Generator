@@ -84,4 +84,4 @@ init();
 // WHEN I enter my email address
 //* THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 // WHEN I click on the links in the Table of Contents
-// todo THEN I am taken to the corresponding section of the README
+// * THEN I am taken to the corresponding section of the README
