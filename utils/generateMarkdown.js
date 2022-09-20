@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }
   if (license == 'None') {
-    return '';
+    return 'There is not license being used on this project';
   }
 }
 // ?this function is not being used
