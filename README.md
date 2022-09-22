@@ -23,3 +23,7 @@ Git
 # Screenshot
 
 ![Imgur](https://i.imgur.com/aLcBUOB.png)
+
+# Video
+
+https://drive.google.com/file/d/1CC5fsIohwu2VuT8BomVJA1wnqQtdXA3q/view
